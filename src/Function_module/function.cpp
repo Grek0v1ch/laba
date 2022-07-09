@@ -42,3 +42,23 @@ void print_figures(List<Figure*>& list) {
 		count++;
 	}
 }
+
+void find_triangle_and_pyramid(List<Figure*>& list, Acute_triangle& triangle, Pyramid& pyramid) {
+	pnode<Figure*> curr = list.front();
+	while (curr) {
+		auto& value = *(curr->value());
+		if (typeid(value) == typeid(triangle)) {
+			Acute_triangle* object = dynamic_cast<Acute_triangle*>(curr->value());
+			if (std::max(triangle.get_side_a(),
+						 std::max(triangle.get_side_b(), triangle.get_side_c()))
+				< std::max(object->get_side_a(),
+						   std::max(object->get_side_b(), object->get_side_c())))
+			triangle = *object;
+		} else if (typeid(value) == typeid(pyramid)) {
+			Pyramid* object = dynamic_cast<Pyramid*>(curr->value());
+			if (pyramid.get_volume() < object->get_volume())
+				pyramid = *object;
+		}
+		curr = curr->next();
+	}
+}

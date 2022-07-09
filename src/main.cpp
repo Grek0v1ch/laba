@@ -11,6 +11,11 @@ int main() {
 
 	read_figures(finput, list);
 	print_figures(list);
+	Acute_triangle triangle;
+	Pyramid pyramid;
+	find_triangle_and_pyramid(list, triangle, pyramid);
+	triangle.print();
+	pyramid.print();
 
 	finput.close();
 	return 0;
