@@ -12,12 +12,12 @@ Acute_triangle::Acute_triangle(double angle_c, double side_a, double side_b) {
 }
 
 Acute_triangle& Acute_triangle::operator=(const Acute_triangle& object) {
-		if (&object == this) return *this;
-		_angle_c = object._angle_c;
-		_side_a = object._side_a;
-		_side_b = object._side_b;
-		return *this;
-	}
+	if (&object == this) return *this;
+	_angle_c = object._angle_c;
+	_side_a = object._side_a;
+	_side_b = object._side_b;
+	return *this;
+}
 
 double Acute_triangle::get_side_a() const {
 	return _side_a;
