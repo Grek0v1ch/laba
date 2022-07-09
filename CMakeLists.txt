@@ -9,4 +9,5 @@ add_executable(laba1 src/main.cpp
 					 src/Acute_triangle/Acute_triangle.h
 					 src/Acute_triangle/Acute_triangle.cpp
 					 src/Pyramid/Pyramid.h
-					 src/Pyramid/Pyramid.cpp)
+					 src/Pyramid/Pyramid.cpp
+					 src/DLList/dllist.h)
