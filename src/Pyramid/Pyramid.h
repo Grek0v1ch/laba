@@ -3,7 +3,7 @@
 
 #include "../Acute_triangle/Acute_triangle.h"
 
-class Pyramid : private Acute_triangle {
+class Pyramid : public Acute_triangle {
 private:
 	double _height;
 public:
