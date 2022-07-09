@@ -8,8 +8,7 @@ private:
 	double _height;
 public:
 	Pyramid() : Acute_triangle(), _height(0) {}
-	Pyramid(double angle_c, double side_a, double side_b, double height) :
-		Acute_triangle(angle_c, side_a, side_b), _height(height) {}
+	Pyramid(double angle_c, double side_a, double side_b, double height);
 	Pyramid(const Pyramid& object) : Acute_triangle(object), _height(object._height) {}
 	~Pyramid() {}
 

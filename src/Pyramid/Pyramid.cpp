@@ -1,6 +1,12 @@
 #include "Pyramid.h"
 #include <iostream>
 
+Pyramid::Pyramid(double angle_c, double side_a, double side_b, double height) :
+	Acute_triangle(angle_c, side_a, side_b),
+	_height(height) {
+	if (_height < 0) throw std::string("invalid_parameters");
+}
+
 Pyramid& Pyramid::operator=(const Pyramid& object) {
 	if (&object == this) return *this;
 	_angle_c = object._angle_c;
