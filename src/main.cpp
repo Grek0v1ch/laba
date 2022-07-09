@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Figure/Figure.h"
+#include "Acute_triangle/Acute_triangle.h"
 
 int main() {
 	return 0;

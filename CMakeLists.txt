@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_FLAGS  "-g")
 
 add_executable(laba1 src/main.cpp
-					 src/Figure/Figure.h)
+					 src/Figure/Figure.h
+					 src/Acute_triangle/Acute_triangle.h
+					 src/Acute_triangle/Acute_triangle.cpp)
